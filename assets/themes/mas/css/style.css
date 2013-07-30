@@ -1,0 +1,123 @@
+/* Override some defaults */
+html, body {
+  background-color: #eee8d5; /* Solarized base2 */
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+  color: #657b83; /* Solarized base00 */
+}
+.container > footer p a {
+  text-align: center; /* center align it with the container */
+}
+
+.container {
+  width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+}
+
+/* The white background content wrapper */
+.content {
+  background-color: #fdf6e3; /* Solarized base3 */
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* Page header tweaks */
+.page-header {
+  background-color: #93a1a1;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
+}
+
+.page-header h1, .page-header h2, .page-header h3 {
+  color: #657b83; /* Solarized base00*/
+}
+
+.page-header h1 small {
+  color: #839496; /* Solarized base0*/
+}
+
+.span14 h1, h2, h3 {
+  color: #586e75; /* Solarized base01*/
+}
+
+.span14 li, .span10 li {
+	color: #657b83; /* Solarized base00 */
+}
+
+.span14 a, .span10 a {
+  color: #b58900; /* Solarized yellow */
+}
+.span14 a:hover, .span10 a:hover {
+  background-color: #eee8d5; /* Solarized base2 */
+}
+
+code {
+  background-color: #eee8d5; /* Solarized base2 */
+  color: #657b83; /* Solarized base00 */
+  font-family: monospace;
+}
+
+pre {
+  background-color: #fdf6e3; /* Solarized base3 */
+}
+
+.span14 .date {
+	color: #93a1a1; /* Solarized yellow */
+}	
+
+.topbar .btn {
+  border: 0;
+}
+
+.topbar a:hover, .nav .active>a {
+  background-color: #b58900; /* Solarized yellow */
+}
+
+.topbar div>ul .active>a  {
+  background-color: #b58900; /* Solarized yellow */
+}
+
+.topbar .brand, .topbar a {
+  color: #657b83; /* Solarized base01 */
+}
+
+
+/* tag_box ======================================================== */
+
+.tag_box {
+	list-style:none;
+	margin:0;
+	padding:5px 0 ;
+	overflow:hidden;
+}
+.tag_box li {
+	line-height:28px;
+}
+.tag_box.inline li {
+	float:left;
+}
+.tag_box a {
+	padding: 3px 6px;
+	margin: 2px;
+	background: #eee;
+	color:#005F6B;
+	border-radius: 3px;
+	text-decoration:none;
+}
+.tag_box a span{
+	vertical-align:super;
+	font-size:0.8em;
+}
+.tag_box a.active {
+	background:#57A957;
+	border:1px solid #4C964D;
+	color:#FFF;
+}
+	
