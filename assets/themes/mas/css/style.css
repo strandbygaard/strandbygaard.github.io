@@ -121,3 +121,22 @@ pre {
 	color:#FFF;
 }
 	
+
+
+
+#googleplus_widget{
+  background-color: #fdf6e3; 
+}
+
+#googleplus_widget span{
+  width: 298px;
+  height: 116px;
+  float: left;
+  overflow: hidden;
+  background-color: #fdf6e3; 
+}
+#googleplus_widget span div{
+  margin: -1px 0 0 -1px !important;
+  position: relative; 
+  background-color: #fdf6e3; 
+}
