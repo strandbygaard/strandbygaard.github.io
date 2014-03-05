@@ -70,6 +70,8 @@ pre {
 
 .span14 .date {
 	color: #93a1a1; /* Solarized yellow */
+  margin-top: 3px;
+  margin-bottom: 5px;
 }	
 
 .topbar .btn {

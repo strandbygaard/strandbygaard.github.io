@@ -1,0 +1,803 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0137)http://www.slideshare.net/slideshow/embed_code/714582?hostedIn=slideshare&referer=http%253A%252F%252Fwww.slideshare.net%252Fstrandbygaard -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="canonical" href="http://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation">
+
+    <!-- SL:begin:notranslate -->
+    <title>Identity 2.0 - OpenID And User Centric Identity</title>
+    <!-- SL:end:notranslate -->
+    <!--[if IE]><style>.slidesContainer img { border: none } </style><![endif]-->
+    <script type="text/javascript" async="" src="./Identity 2.0 - OpenID And User Centric Identity_files/beacon.js"></script><script type="text/javascript" async="" src="./Identity 2.0 - OpenID And User Centric Identity_files/ga.js"></script><script type="text/javascript" src="./Identity 2.0 - OpenID And User Centric Identity_files/jquery.min.js"></script><style type="text/css"></style>
+
+    <script type="text/javascript">
+      var slideshare_object = {
+        user: {"name":null,"userGroup":"non-member","is_pro":"false","su":false,"fb_access_token":null,"id":null,"is_opengraph_user":false,"has_uploads":null,"is_fbuser":null,"login":"guest","loggedin":false,"opengraph_permissions":{},"fb_userid":null},
+        timer: { start: (new Date()).getTime(), end: '', execTime: '' },
+        top_nav: { get_url: "/top_nav"},
+        li_bar: {get_url: "/li_bar"},
+        dev: false,
+        fb_app_name: 'slideshare',
+        init: [],
+        feature_flag: []
+      };
+    </script>
+
+    <script src="./Identity 2.0 - OpenID And User Centric Identity_files/global.js" type="text/javascript"></script>
+
+      <script type="text/javascript">
+        var _jspl = {}
+        _jspl.pageInitTime = (new Date()).getTime();
+        window._gaq = [];
+        _gaq.push(['_setAccount','UA-2330466-1']);
+        _gaq.push(['_setDomainName', '.slideshare.net']);
+        _gaq.push(['_addIgnoredRef', 'slideshare.net']);
+        _gaq.push(['_setCustomVar', 2, 'document_referrer', document.referrer]);
+        _gaq.push(['_trackPageview', '/embedPlayerView']);
+        (function(){
+          // google analytics
+          var ga = document.createElement('script'); 
+          ga.type = 'text/javascript'; 
+          ga.async = true;
+          ga.src = ('https:' == document.location.protocol ?
+            'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+          
+          //comscore
+          _comscore = window._comscore || [];
+          _comscore.push({ c1: "7", c2: "6402952", c3: "1" });
+          var ca = document.createElement("script");
+          ca.type = 'text/javascript';
+          s = document.getElementsByTagName("script")[0]; 
+          ca.async = true;
+          ca.src = (document.location.protocol == "https:" ?
+            "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+          s.parentNode.insertBefore(ca, s); 
+          
+        })();
+      </script>
+    <link href="./Identity 2.0 - OpenID And User Centric Identity_files/combined_presentation.css" media="screen" rel="stylesheet" type="text/css">
+
+      <script src="./Identity 2.0 - OpenID And User Centric Identity_files/combined_presentation.js" type="text/javascript"></script>
+
+    
+    <script type="text/javascript">
+      config = {"start_slide":1,"image_ready":true,"html_ttffont_url_suffix":".js","shareoptions":{"html":"\u003C!-- \u003Cscript\u003E\n(function(){  var FBInitParams = {\n    appId  : '2490221586',\n    status : true, // check login status\n    cookie : true, // enable cookies to allow the server to access the session\n    xfbml  : true, // parse XFBML\n    oauth  : true,  // to enable OAuth 2.0\n    channelUrl  : '//public.slidesharecdn.com/channel.html'\n  };\n  if(typeof(FB) === \"object\"){\n    window.setTimeout(function(){\n      FB.XFBML.parse();\n      FB.Event.subscribe('edge.create',fbLike);\n    },50);\n  }else{\n    window.fbAsyncInit = function() {\n      FB.init(FBInitParams);\n      FB.Event.subscribe('edge.create',fbLike);\n    }\n  }\n})();\n\u003C/script\u003E --\u003E\n\n\u003Cdiv class=\"shareoptions\"\u003E\n  \u003Cul class=\"thirdPartyShare\"\u003E\n  \t\u003Cli\u003E\u003Ca href=\"#\" class=\"shareSprite Twitter\"\u003E\u0026nbsp; \u003C/a\u003E\u003C/li\u003E\n    \u003Cli\u003E\u003Ca href=\"#\" class=\"shareSprite Linkedin\"\u003E\u0026nbsp; \u003C/a\u003E\u003C/li\u003E\n    \u003Cli\u003E\u003Ca href=\"#\" class=\"fb-like\"/\u003E\u003C/li\u003E\n  \u003C/ul\u003E\n\u003C/div\u003E\n","linkedin_share":"http://www.slideshare.net/share/linkedin/714582/SlideShare:%20Identity%202.0%20-%20OpenID%20And%20User%20Centric%20Identity","facebook_like_button":"\u003Ciframe class=\"fb-like\" src=\"//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard%2Fidentity-20-openid-and-user-centric-identity-presentation\u0026amp;width=50\u0026amp;height=21\u0026amp;colorscheme=light\u0026amp;layout=button_count\u0026amp;action=like\u0026amp;show_faces=false\u0026amp;send=false\u0026amp;appId=2490221586\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:50px; height:25px;\" allowTransparency=\"true\"\u003E\u003C/iframe\u003E","facebook_share":"http://www.slideshare.net/share/facebook/714582/Check%20out%20this%20SlideShare%20presentation%20:%20Identity%202.0%20-%20OpenID%20And%20User%20Centric%20Identity","googleplus_share":"http://plus.google.com/share?url=http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard%2Fidentity-20-openid-and-user-centric-identity-presentation","twitter_share":"http://www.slideshare.net/share/tweet/714582/Identity%202.0%20-%20OpenID%20And%20User%20Centric%20Identity"},"iframe_url":"http://www.slideshare.net/slideshow/embed_code/714582","hosted_in":"slideshare","slideshow_real_total_slides_count":100,"pin_image_url":"http://cdn.slidesharecdn.com/ss_thumbnails/identity-2-openid-and-user-centric-identity-1225652350421046-9-thumbnail-4.jpg?cb=1225645589","bucket_location":"//html.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/","iframe_code":"\u003Ciframe src=\"{iframe_url}\" width=\"{width}\" height=\"{height}\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;\" allowfullscreen\u003E \u003C/iframe\u003E \u003Cdiv style=\"margin-bottom:5px\"\u003E \u003Cstrong\u003E \u003Ca href=\"https://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation\" title=\"Identity 2.0 - OpenID And User Centric Identity\" target=\"_blank\"\u003EIdentity 2.0 - OpenID And User Centric Identity\u003C/a\u003E \u003C/strong\u003E from \u003Cstrong\u003E\u003Ca href=\"http://www.slideshare.net/strandbygaard\" target=\"_blank\"\u003EMartin Strandbygaard\u003C/a\u003E\u003C/strong\u003E \u003C/div\u003E","embed_code":"\u003Ciframe src=\"http://www.slideshare.net/slideshow/embed_code/714582\" width=\"427\" height=\"356\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;\" allowfullscreen\u003E \u003C/iframe\u003E \u003Cdiv style=\"margin-bottom:5px\"\u003E \u003Cstrong\u003E \u003Ca href=\"https://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation\" title=\"Identity 2.0 - OpenID And User Centric Identity\" target=\"_blank\"\u003EIdentity 2.0 - OpenID And User Centric Identity\u003C/a\u003E \u003C/strong\u003E from \u003Cstrong\u003E\u003Ca href=\"http://www.slideshare.net/strandbygaard\" target=\"_blank\"\u003EMartin Strandbygaard\u003C/a\u003E\u003C/strong\u003E \u003C/div\u003E","is_ssl":false,"timestamp":1225645589,"video_slides_count":0,"meta_error_template":"\u003Cstyle type=\"text/css\"\u003E\n  .jsplayer-slide-error {\n    background-color: #000;\n    padding: 20% 0 13% !important;\n  }\n  .jsplayer-slide-error div {\n    text-align: center;\n  }\n  .jsplayer-slide-error img {\n    height: 79px !important;\n    margin: 0 0 10px;\n    width: 80px !important;\n  }\n  .jsplayer-slide-error .slide-error-body {\n    color: #eee;\n    font-family: 'Lucida Grande',Verdana, Arial, Helvetica, sans-serif;\n    padding: 0 !important;\n  }\n  .jsplayer-slide-error .slide-error-body p {\n    font-size: 0.8em;\n    line-height: 1.1em;\n    margin: 8px 0;\n  }   \n  .jsplayer-slide-error .slide-error-body input[type=button] {\n    margin: 7px 0 0;\n    padding: 7px 14px;\n  }\n\u003C/style\u003E\n\u003Cdiv class=\"jsplayer-slide-error\"\u003E\n  \u003Cdiv style=\"position:relative;\"\u003E\n    \u003Cimg src='//public.slidesharecdn.com/images/ssplayer/error_dudes-80x79.png' height=\"79\" width=\"80\" /\u003E\n    \u003Cdiv class=\"slide-error-body\"\u003E\n      \u003Cp\u003EWe have encountered an error.\u003C/p\u003E\n      \u003Cp\u003EPlease refresh the page.\u003C/p\u003E\n    \u003C/div\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n","spinner_url":"//public.slidesharecdn.com/images/ssplayer/loading.gif","ppt_location":"identity-2-openid-and-user-centric-identity-1225652350421046-9","slide_error_template":"\u003Cstyle type=\"text/css\"\u003E\n  .jsplayer-slide-error {\n    background-color: #000;\n    padding: 20% 0 13% !important;\n  }\n  .jsplayer-slide-error div {\n    text-align: center;\n  }\n  .jsplayer-slide-error img {\n    height: 79px !important;\n    margin: 0 0 10px;\n    width: 80px !important;\n  }\n  .jsplayer-slide-error .slide-error-body {\n    color: #eee;\n    font-family: 'Lucida Grande',Verdana, Arial, Helvetica, sans-serif;\n    padding: 0 !important;\n  }\n  .jsplayer-slide-error .slide-error-body p {\n    font-size: 0.8em;\n    line-height: 1.1em;\n    margin: 7px 0 11px;\n  }\n  .jsplayer-slide-error .slide-error-body input[type=button] {\n    margin: 7px 0 0;\n    padding: 7px 14px;\n  }\n\u003C/style\u003E\n\u003Cdiv class=\"jsplayer-slide-error\"\u003E\n  \u003Cdiv style=\"position:relative;\"\u003E\n    \u003Cimg src='//public.slidesharecdn.com/images/ssplayer/error_dudes-80x79.png' height=\"79\" width=\"80\" /\u003E\n    \u003Cdiv class=\"slide-error-body\"\u003E\n      \u003Cp\u003EWe were unable to load the slide.\u003C/p\u003E\n      \u003Cinput class=\"btn btn-large\" type=\"button\" value=\"Reload slide\" /\u003E\n    \u003C/div\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n","fullscreen_url":"/fullscreen/strandbygaard/identity-20-openid-and-user-centric-identity-presentation","has_video":false,"show_image_player":true,"sharescreen":{"html":"\u003Cdiv class=\"shareScreen\"\u003E\n  \u003Ca href=\"#\" class=\"close\"\u003E\u0026times;\u003C/a\u003E\n  \u003Cul class=\"shareMethods\"\u003E\n    \u003Cli class=\"embed\"\u003E\n      \u003Clabel for=\"embed-code\"\u003EEmbed\u003C/label\u003E\n      \u003Cinput type='text' class=\"shareScreenEmbedCode\" value=\"code\" name=\"embed-code\" /\u003E\n    \u003C/li\u003E\n    \u003Cli class=\"url last\"\u003E\n      \u003Clabel for=\"embed-url\"\u003EURL\u003C/label\u003E\n      \u003Cinput type='text' class=\"shareScreenSSUrl\" value=\"code\" name=\"embed-url\" /\u003E\n\t\u003C/li\u003E\n  \u003C/ul\u003E\n  \u003Cform class=\"emailShare\"\u003E\n    \u003Cfieldset\u003E\n      \u003Clegend\u003EEmail this\u003C/legend\u003E\n      \u003Cinput type=\"hidden\" class=\"shareDefaultMessage\" value=\"I think you will find this useful.\" /\u003E\n      \u003Cul\u003E\n        \u003Cli\u003E\n          \u003Clabel for=\"name\"\u003EYour name\u003C/label\u003E\n          \u003Cinput class='shareScreenFromName' type=\"text\" value=\"\" /\u003E\n        \u003C/li\u003E\n        \u003Cli\u003E\n          \u003Clabel for=\"mailID\"\u003EEmail to\u003C/label\u003E\n          \u003Cinput class=\"shareScreenMailID\" type=\"text\" value=\"\" /\u003E\n        \u003C/li\u003E\n        \u003Cli class=\"submit\"\u003E\n          \u003Clabel\u003E\u0026nbsp;\u003C/label\u003E\n          \u003Cinput class=\"shareSprite\" type=\"submit\" value=\"\" /\u003E\n        \u003C/li\u003E        \n      \u003C/ul\u003E\n      \u003C/fieldset\u003E\n  \u003C/form\u003E\n\u003C/div\u003E\u003C!-- shareScreen ends here --\u003E","slideshow_id":714582,"title":"Identity 2.0 - OpenID And Use...","url":"http://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation","user_name":""},"twitter_recommended_users":null,"mode":"image","show_related_content":"1","has_lead":false,"slide_count":100,"is_private":false,"container":"player","lastscreen":{"related":[{"author_login":"oscon2007","author":"oscon2007","title":"Os Recordontutorial","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/os-recordontutorial233-thumbnail.jpg?cb=1187507512","url":"/oscon2007/os-recordontutorial","views":7720},{"author_login":"daveman692","author":"David Recordon","title":"OpenID Bootcamp Tutorial","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/openid-bootcamp-tutorial1947-thumbnail.jpg?cb=1185304505","url":"/daveman692/openid-bootcamp-tutorial","views":131072},{"author_login":"daveman692","author":"David Recordon","title":"OpenID Overview - Seoul July 2007","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/open-id-overview-seoul-july-20073448-thumbnail.jpg?cb=1185378378","url":"/daveman692/open-id-overview-seoul-july-2007","views":32098},{"author_login":"simon","author":"Simon Willison","title":"Building the Social Web with OpenID","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/building-the-social-web-with-openid1671-thumbnail.jpg?cb=1189286995","url":"/simon/building-the-social-web-with-openid","views":20952},{"author_login":"cvanp","author":"cvanp","title":"FOSSwire3 + OpenID","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/barcamp1-090303003741-phpapp02-thumbnail.jpg?cb=1236062329","url":"/cvanp/fosswire3-openid","views":801},{"author_login":"electrictwister","author":"Sebastiano Merlino","title":"Openid+Opensocial","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/gtugopenidopensocial-100711152348-phpapp01-thumbnail.jpg?cb=1278880447","url":"/electrictwister/openidopensocial","views":3867},{"author_login":"dullhunk","author":"Duncan Hull","title":"Authenticating Scientists with OpenID","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/soloconf09-090825022821-phpapp02-thumbnail.jpg?cb=1251277895","url":"/dullhunk/authenticating-scientists-with-openid","views":2786},{"author_login":"simon","author":"Simon Willison","title":"The Implications of OpenID","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/the-implications-of-openid-28758-thumbnail.jpg?cb=1179468540","url":"/simon/the-implications-of-openid","views":38330},{"author_login":"simon","author":"Simon Willison","title":"OpenID and decentralised social net...","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/openid-and-decentralised-social-networks-1205261824200237-3-thumbnail.jpg?cb=1205251025","url":"/simon/openid-and-decentralised-social-networks","views":5561},{"author_login":"simon","author":"Simon Willison","title":"Implications Of OpenID (Google Tech...","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/implications-of-openid-google-tech-talk163-thumbnail.jpg?cb=1182938220","url":"/simon/implications-of-openid-google-tech-talk","views":54290},{"author_login":"diwanshu.joshi","author":"diwanshu.joshi","title":"Open ID","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/openid-091204100243-phpapp02-thumbnail.jpg?cb=1262729022","url":"/diwanshu.joshi/open-id-2649986","views":1073},{"author_login":"nathanflorea","author":"nathanflorea","title":"Open ID and Django","thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/openidanddjango-100910065647-phpapp02-thumbnail.jpg?cb=1284120968","url":"/nathanflorea/open-id-and-django","views":2035}],"url":"http://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation"},"player_type":"presentation","toolbar_html":"\u003C!--[if IE 7]\u003E\n  \u003Cstyle\u003E\n    .toolbar .navActions { position: relative; top: -28px; }\n    div.toolbar .nav {margin-left : 37%; }\n  \u003C/style\u003E\n\u003C![endif]--\u003E\n  \u003Ca href=\"#\" class=\"sprite btnViewOnSS\" title=\"View on SlideShare\"\u003E\u0026nbsp;\u003C/a\u003E\u003C!-- view on SS --\u003E\n  \u003Cdiv class=\"nav\"\u003E\n    \u003Ca href=\"#btnFirst\" class=\"btnFirst\" title=\"First Slide\" rel=\"nofollow\"\u003E\u0026laquo;\u003C/a\u003E\n    \u003Ca href=\"#btnPrevious\" class=\"btnPrevious\" title=\"Previous Slide\" rel=\"nofollow\"\u003E\u0026lsaquo;\u003C/a\u003E\n    \u003Ca href=\"#btnNext\" class=\"btnNext\" title=\"Next Slide\" rel=\"nofollow\"\u003E\u0026rsaquo;\u003C/a\u003E\n    \u003Ca href=\"#btnLast\" class=\"btnLast\" title=\"Last Slide\" rel=\"nofollow\"\u003E\u0026raquo;\u003C/a\u003E\n  \u003C/div\u003E\n  \u003Cdiv class=\"navActions\"\u003E\n    \u003Ca href=\"#\" class=\"btnFullScreen\" title=\"View Fullscreen\" rel=\"nofollow\"\u003E\u0026nbsp;\u003C/a\u003E\n    \u003Ca href=\"#\" class=\"btnLeaveFullScreen\" title=\"Exit Fullscreen\" rel=\"nofollow\"\u003E\u0026nbsp;\u003C/a\u003E\n    \u003Clabel class=\"goToSlideLabel\"\u003E\u003Cinput type=\"text\" name=\"goToSlide\" value=\"1\" /\u003E\u003Cspan\u003E/ 123\u003C/span\u003E\u003C/label\u003E\n  \u003C/div\u003E\n","player_bgcolor":"jsplBgColorBigfoot","embed_sizes":{"presets":{"preset3":{"size":{"height":420,"width":510},"displaySize":{"height":45,"width":60}},"preset4":{"size":{"height":485,"width":595},"displaySize":{"height":53,"width":70}},"preset1":{"size":{"height":290,"width":340},"displaySize":{"height":30,"width":40}},"preset2":{"size":{"height":355,"width":425},"displaySize":{"height":38,"width":50}}},"config":{"defaultPreset":"preset2"}},"twitter_share_text":"Identity 2.0 - OpenID And User Centric Identity #authentication #decentralized","id":714582,"disable_lastscreen":false,"html_eotfont_url_suffix":"-eot.js","has_audio":false,"spinner_url_fullscreen":"//public.slidesharecdn.com/images/ssplayer/loading_white.gif","page":null,"share_text":"Identity 2.0 - OpenID And User Centric Identity by Martin Strandbygaard via slideshare","referer":"http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard","disable_share":false,"share_cta":{"html":"\u003Cdiv class=\"action-btns-container\"\u003E\n    \u003Ca rel=\"nofollow\" title=\"Like this presentation\" href = \"/login\" target=\"_blank\" class=\"action-btn favorite j-favorite ss-action\" data-ssid=\"714582\"\u003E\n      \u003Cspan class=\"action-btn-icon\"\u003E\u003C/span\u003E\n      \u003Cspan class=\"action-btn-text\"\u003ELike\u003C/span\u003E\n    \u003C/a\u003E\n\n  \u003Ca rel=\"nofollow\" href=\"#\" title=\"Share this presentation\" class=\"action-btn share j-share\" data-ssid=\"714582\"\u003E\n    \u003Cspan class=\"action-btn-icon\"\u003E\u003C/span\u003E\n    \u003Cspan class=\"action-btn-text\"\u003EShare\u003C/span\u003E\n  \u003C/a\u003E\n\n    \u003Ca rel=\"nofollow\" href=\"/signup?from=download\u0026amp;from_source=%2Fsavedfiles%3Fs_title%3Didentity-20-openid-and-user-centric-identity-presentation%26user_login%3Dstrandbygaard\u0026amp;download_id=714582-d98b3e67c3e55cfc7a057c79ece1bd3fd10cb33c-slideshow\" target=\"_blank\" title=\"Save this presentation\" class=\"action-btn save j-save ss-action\"\u003E\n      \u003Cspan class=\"save action-btn-icon\"\u003E\u003C/span\u003E\n      \u003Cspan class=\"action-btn-text\"\u003ESave\u003C/span\u003E\n    \u003C/a\u003E\n\u003C/div\u003E\n"},"stripped_title":"identity-20-openid-and-user-centric-identity-presentation","toolbar_partial":"slideshow/jsplayer_toolbar_presentation","is_only_private":false,"track_slide_enable":1,"author_id":7920962,"video_slides":[],"replayscreen":{"html":"\u003Ca href=\"#\" class=\"replayScreenReplay\" \u003EView again\u003C/a\u003E"},"image_bucket_location":"//image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9","use_ssl":false,"beacon_url":"stats.slideshare.net/1.gif","render_links":"default","slideshow_slideshow_type":0,"slideview_url":"/strandbygaard/identity-20-openid-and-user-centric-identity-presentation?ref=http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard","wp_code":"[slideshare id=714582\u0026doc=identity-2-openid-and-user-centric-identity-1225652350421046-9]","fullscreen_bgcolor":"jsplBgColorWhite"};
+
+      $(function(){
+        jsplayer = new SSPlayer(config);
+        window.bindJsAPI && bindJsAPI(jsplayer);
+        $(jsplayer).bind('slidechanged', function(e){
+          $('.current_slide_number').text(e.ssData.index);
+        });
+      });
+    </script>
+  <meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Google Analytics&quot;:-1,&quot;jQuery&quot;:&quot;1.7.2&quot;,&quot;Modernizr&quot;:&quot;2.0.6&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script></head>
+  <body style="border:0;margin:0;padding:0;width:100%;height:100%;">
+      <div class="player embed_player   lightPlayer fluidImage fluidLayout presentation_player" id="player" style="overflow: hidden;">
+        <div class="stage" style="height: 724px; max-height: 724px; line-height: 724px;">
+          <a class="exit-fullscreen j-exit-fullscreen"></a>
+          <div class="slide_container tall_img jsplBgColorBigfoot">
+                  <div data-index="1" class="slide show" slidenumber="1" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-1-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-1-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-1-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-1-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="2" class="slide" slidenumber="2" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-2-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-2-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-2-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-2-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="3" class="slide" slidenumber="3" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-3-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-3-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-3-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-3-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="4" class="slide" slidenumber="4" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-4-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-4-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-4-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-4-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="5" class="slide" slidenumber="5" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-5-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-5-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-5-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-5-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="6" class="slide" slidenumber="6" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-6-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-6-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-6-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-6-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="7" class="slide" slidenumber="7" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-7-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-7-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-7-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-7-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="8" class="slide" slidenumber="8" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-8-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-8-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-8-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-8-320.jpg?cb=1225645589" usemap="#image_map_8_1392651040934">
+                  </div>
+                  <div data-index="9" class="slide" slidenumber="9" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-9-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-9-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-9-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-9-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="10" class="slide" slidenumber="10" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-10-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-10-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-10-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-10-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="11" class="slide" slidenumber="11" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-11-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-11-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-11-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-11-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="12" class="slide" slidenumber="12" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-12-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-12-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-12-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-12-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="13" class="slide" slidenumber="13" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-13-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-13-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-13-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-13-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="14" class="slide" slidenumber="14" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-14-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-14-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-14-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-14-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="15" class="slide" slidenumber="15" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-15-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-15-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-15-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-15-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="16" class="slide" slidenumber="16" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-16-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-16-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-16-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-16-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="17" class="slide" slidenumber="17" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-17-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-17-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-17-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-17-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="18" class="slide" slidenumber="18" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-18-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-18-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-18-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-18-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="19" class="slide" slidenumber="19" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-19-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-19-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-19-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-19-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="20" class="slide" slidenumber="20" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-20-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-20-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-20-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-20-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="21" class="slide" slidenumber="21" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-21-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-21-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-21-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-21-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="22" class="slide" slidenumber="22" style="min-height: 0px;">
+                    <img class="slide_image" src="./Identity 2.0 - OpenID And User Centric Identity_files/slide-22-1024.jpg" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-22-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-22-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-22-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="23" class="slide" slidenumber="23" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-23-1024.jpg?cb=1225645589" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-23-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-23-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-23-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="24" class="slide" slidenumber="24" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-24-1024.jpg?cb=1225645589" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-24-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-24-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-24-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="25" class="slide" slidenumber="25" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-25-1024.jpg?cb=1225645589" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-25-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-25-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-25-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="26" class="slide" slidenumber="26" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-26-1024.jpg?cb=1225645589" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-26-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-26-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-26-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="27" class="slide" slidenumber="27" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-27-1024.jpg?cb=1225645589" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-27-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-27-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-27-320.jpg?cb=1225645589" usemap="#image_map_27_1392651047234">
+                  </div>
+                  <div data-index="28" class="slide" slidenumber="28" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-28-1024.jpg?cb=1225645589" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-28-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-28-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-28-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="29" class="slide" slidenumber="29" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-29-1024.jpg?cb=1225645589" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-29-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-29-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-29-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="30" class="slide" slidenumber="30">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-30-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-30-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-30-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="31" class="slide" slidenumber="31">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-31-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-31-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-31-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="32" class="slide" slidenumber="32">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-32-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-32-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-32-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="33" class="slide" slidenumber="33">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-33-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-33-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-33-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="34" class="slide" slidenumber="34">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-34-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-34-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-34-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="35" class="slide" slidenumber="35">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-35-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-35-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-35-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="36" class="slide" slidenumber="36">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-36-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-36-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-36-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="37" class="slide" slidenumber="37">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-37-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-37-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-37-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="38" class="slide" slidenumber="38">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-38-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-38-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-38-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="39" class="slide" slidenumber="39">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-39-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-39-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-39-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="40" class="slide" slidenumber="40">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-40-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-40-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-40-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="41" class="slide" slidenumber="41">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-41-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-41-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-41-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="42" class="slide" slidenumber="42">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-42-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-42-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-42-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="43" class="slide" slidenumber="43">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-43-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-43-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-43-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="44" class="slide" slidenumber="44">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-44-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-44-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-44-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="45" class="slide" slidenumber="45">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-45-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-45-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-45-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="46" class="slide" slidenumber="46">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-46-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-46-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-46-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="47" class="slide" slidenumber="47">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-47-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-47-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-47-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="48" class="slide" slidenumber="48">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-48-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-48-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-48-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="49" class="slide" slidenumber="49">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-49-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-49-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-49-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="50" class="slide" slidenumber="50">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-50-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-50-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-50-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="51" class="slide" slidenumber="51">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-51-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-51-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-51-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="52" class="slide" slidenumber="52">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-52-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-52-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-52-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="53" class="slide" slidenumber="53">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-53-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-53-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-53-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="54" class="slide" slidenumber="54">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-54-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-54-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-54-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="55" class="slide" slidenumber="55">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-55-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-55-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-55-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="56" class="slide" slidenumber="56">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-56-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-56-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-56-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="57" class="slide" slidenumber="57">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-57-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-57-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-57-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="58" class="slide" slidenumber="58">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-58-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-58-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-58-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="59" class="slide" slidenumber="59">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-59-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-59-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-59-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="60" class="slide" slidenumber="60">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-60-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-60-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-60-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="61" class="slide" slidenumber="61">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-61-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-61-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-61-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="62" class="slide" slidenumber="62">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-62-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-62-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-62-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="63" class="slide" slidenumber="63">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-63-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-63-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-63-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="64" class="slide" slidenumber="64">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-64-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-64-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-64-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="65" class="slide" slidenumber="65">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-65-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-65-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-65-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="66" class="slide" slidenumber="66">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-66-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-66-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-66-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="67" class="slide" slidenumber="67">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-67-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-67-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-67-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="68" class="slide" slidenumber="68">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-68-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-68-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-68-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="69" class="slide" slidenumber="69">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-69-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-69-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-69-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="70" class="slide" slidenumber="70">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-70-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-70-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-70-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="71" class="slide" slidenumber="71">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-71-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-71-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-71-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="72" class="slide" slidenumber="72">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-72-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-72-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-72-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="73" class="slide" slidenumber="73">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-73-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-73-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-73-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="74" class="slide" slidenumber="74">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-74-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-74-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-74-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="75" class="slide" slidenumber="75">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-75-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-75-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-75-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="76" class="slide" slidenumber="76">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-76-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-76-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-76-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="77" class="slide" slidenumber="77">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-77-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-77-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-77-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="78" class="slide" slidenumber="78">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-78-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-78-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-78-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="79" class="slide" slidenumber="79">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-79-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-79-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-79-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="80" class="slide" slidenumber="80">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-80-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-80-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-80-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="81" class="slide" slidenumber="81">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-81-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-81-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-81-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="82" class="slide" slidenumber="82">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-82-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-82-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-82-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="83" class="slide" slidenumber="83">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-83-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-83-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-83-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="84" class="slide" slidenumber="84">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-84-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-84-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-84-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="85" class="slide" slidenumber="85">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-85-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-85-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-85-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="86" class="slide" slidenumber="86">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-86-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-86-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-86-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="87" class="slide" slidenumber="87">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-87-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-87-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-87-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="88" class="slide" slidenumber="88">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-88-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-88-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-88-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="89" class="slide" slidenumber="89">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-89-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-89-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-89-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="90" class="slide" slidenumber="90">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-90-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-90-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-90-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="91" class="slide" slidenumber="91">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-91-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-91-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-91-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="92" class="slide" slidenumber="92">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-92-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-92-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-92-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="93" class="slide" slidenumber="93">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-93-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-93-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-93-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="94" class="slide" slidenumber="94">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-94-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-94-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-94-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="95" class="slide" slidenumber="95">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-95-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-95-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-95-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="96" class="slide" slidenumber="96">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-96-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-96-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-96-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="97" class="slide" slidenumber="97">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-97-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-97-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-97-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="98" class="slide" slidenumber="98">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-98-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-98-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-98-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="99" class="slide" slidenumber="99">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-99-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-99-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-99-320.jpg?cb=1225645589">
+                  </div>
+                  <div data-index="100" class="slide" slidenumber="100">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-100-728.jpg?cb=1225645589" data-full="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/95/slide-100-1024.jpg?cb=1225645589" data-small="http://image.slidesharecdn.com/identity-2-openid-and-user-centric-identity-1225652350421046-9/85/slide-100-320.jpg?cb=1225645589">
+                  </div>
+          </div>
+        </div><div class="leftpoint pointly"></div><div class="rightpoint pointly"></div> <!-- end stage -->
+        <div class="toolbar_wrapper">
+          <div class="toolbar normal">
+            <!--[if IE 7]>
+  <style>
+    .toolbar .navActions { position: relative; top: -28px; }
+    div.toolbar .nav {margin-left : 37%; }
+  </style>
+<![endif]-->
+  <a href="http://www.slideshare.net/slideshow/embed_code/714582?hostedIn=slideshare&referer=http%253A%252F%252Fwww.slideshare.net%252Fstrandbygaard#" class="sprite btnViewOnSS" title="View on SlideShare" style="display: none;">&nbsp;</a><!-- view on SS -->
+  <div class="nav">
+    <a href="http://www.slideshare.net/slideshow/embed_code/714582?hostedIn=slideshare&referer=http%253A%252F%252Fwww.slideshare.net%252Fstrandbygaard#btnFirst" class="btnFirst" title="First Slide" rel="nofollow">«</a>
+    <a href="http://www.slideshare.net/slideshow/embed_code/714582?hostedIn=slideshare&referer=http%253A%252F%252Fwww.slideshare.net%252Fstrandbygaard#btnPrevious" class="btnPrevious" title="Previous Slide" rel="nofollow">‹</a>
+    <a href="http://www.slideshare.net/slideshow/embed_code/714582?hostedIn=slideshare&referer=http%253A%252F%252Fwww.slideshare.net%252Fstrandbygaard#btnNext" class="btnNext" title="Next Slide" rel="nofollow">›</a>
+    <a href="http://www.slideshare.net/slideshow/embed_code/714582?hostedIn=slideshare&referer=http%253A%252F%252Fwww.slideshare.net%252Fstrandbygaard#btnLast" class="btnLast" title="Last Slide" rel="nofollow">»</a>
+  </div>
+  <div class="navActions">
+    <a href="http://www.slideshare.net/slideshow/embed_code/714582?hostedIn=slideshare&referer=http%253A%252F%252Fwww.slideshare.net%252Fstrandbygaard#" class="btnFullScreen" title="View Fullscreen" rel="nofollow">&nbsp;</a>
+    <a href="http://www.slideshare.net/slideshow/embed_code/714582?hostedIn=slideshare&referer=http%253A%252F%252Fwww.slideshare.net%252Fstrandbygaard#" class="btnLeaveFullScreen" title="Exit Fullscreen" rel="nofollow" style="display: none;">&nbsp;</a>
+    <label class="goToSlideLabel"><input type="text" name="goToSlide" value="1"><span>/100</span></label>
+  </div>
+
+          </div>
+        </div> <!-- end toolbar -->
+        <div id="lastScreen" class="hide">
+          <div class="lastScreen">
+  <div class="jsplLastScreenOverlay j-last-screen-overlay"></div>
+  <div class="pro-overlay j-lastscreen">
+    <div class="proSharingText">Like this ? Why not share!</div>
+    <ul class="lastActions j-last-screen-actions">
+      <li class="share-cta j-share-cta lastscreen-share-cta"><a class="share-btn"><span class="lastScreen-sprite"></span>Share</a></li>
+      <li class="email-cta j-email-cta"><a class="email-btn"><span class="lastScreen-sprite"></span>Email</a></li>
+      <li class="replay last">
+        <a class="replay-btn lastScreenReplay j-tooltip j-last-screen-replay" data-original-title="View again" title="View again">
+          <span class="lastScreen-sprite">&nbsp;</span>
+        </a>
+      </li>
+      <li class="close-btn lastScreen-sprite j-lastscreen-close">
+        <a>&nbsp;</a>
+      </li>
+    </ul>
+    <div class="related-presentations j-lastscreen-related">
+      <ul class="presentation-list">
+        <li>
+         <a href="http://www.slideshare.net/oscon2007/os-recordontutorial" title="Os Recordontutorial" target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/os-recordontutorial233-thumbnail.jpg" alt="Os Recordontutorial">
+           <span class="presentation-meta">
+             <span class="title">Os Recordontutorial</span>
+             <span class="author">by&nbsp;oscon2007</span>
+             <span class="view-count">7720&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/daveman692/openid-bootcamp-tutorial" title="OpenID Bootcamp Tutorial" target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/openid-bootcamp-tutorial1947-thumbnail.jpg" alt="OpenID Bootcamp Tutorial">
+           <span class="presentation-meta">
+             <span class="title">OpenID Bootcamp Tutorial</span>
+             <span class="author">by&nbsp;David Recordon</span>
+             <span class="view-count">131072&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/daveman692/open-id-overview-seoul-july-2007" title="OpenID Overview - Seoul July 2007" target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/open-id-overview-seoul-july-20073448-thumbnail.jpg" alt="OpenID Overview - Seoul July 2007">
+           <span class="presentation-meta">
+             <span class="title">OpenID Overview - Seoul July 2007</span>
+             <span class="author">by&nbsp;David Recordon</span>
+             <span class="view-count">32098&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/simon/building-the-social-web-with-openid" title="Building the Social Web with OpenID" target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/building-the-social-web-with-openid1671-thumbnail.jpg" alt="Building the Social Web with OpenID">
+           <span class="presentation-meta">
+             <span class="title">Building the Social Web with OpenID</span>
+             <span class="author">by&nbsp;Simon Willison</span>
+             <span class="view-count">20952&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/cvanp/fosswire3-openid" title="FOSSwire3 + OpenID" target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/barcamp1-090303003741-phpapp02-thumbnail.jpg" alt="FOSSwire3 + OpenID">
+           <span class="presentation-meta">
+             <span class="title">FOSSwire3 + OpenID</span>
+             <span class="author">by&nbsp;cvanp</span>
+             <span class="view-count">801&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/electrictwister/openidopensocial" title="Openid+Opensocial" target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/gtugopenidopensocial-100711152348-phpapp01-thumbnail.jpg" alt="Openid+Opensocial">
+           <span class="presentation-meta">
+             <span class="title">Openid+Opensocial</span>
+             <span class="author">by&nbsp;Sebastiano Merlino</span>
+             <span class="view-count">3867&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/dullhunk/authenticating-scientists-with-openid" title="Authenticating Scientists with OpenID" target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/soloconf09-090825022821-phpapp02-thumbnail.jpg" alt="Authenticating Scientists with OpenID">
+           <span class="presentation-meta">
+             <span class="title">Authenticating Scientists with OpenID</span>
+             <span class="author">by&nbsp;Duncan Hull</span>
+             <span class="view-count">2786&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/simon/the-implications-of-openid" title="The Implications of OpenID" target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/the-implications-of-openid-28758-thumbnail.jpg" alt="The Implications of OpenID">
+           <span class="presentation-meta">
+             <span class="title">The Implications of OpenID</span>
+             <span class="author">by&nbsp;Simon Willison</span>
+             <span class="view-count">38330&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/simon/openid-and-decentralised-social-networks" title="OpenID and decentralised social net..." target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/openid-and-decentralised-social-networks-1205261824200237-3-thumbnail.jpg" alt="OpenID and decentralised social net...">
+           <span class="presentation-meta">
+             <span class="title">OpenID and decentralised social net...</span>
+             <span class="author">by&nbsp;Simon Willison</span>
+             <span class="view-count">5561&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/simon/implications-of-openid-google-tech-talk" title="Implications Of OpenID (Google Tech..." target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/implications-of-openid-google-tech-talk163-thumbnail.jpg" alt="Implications Of OpenID (Google Tech...">
+           <span class="presentation-meta">
+             <span class="title">Implications Of OpenID (Google Tech...</span>
+             <span class="author">by&nbsp;Simon Willison</span>
+             <span class="view-count">54290&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/diwanshu.joshi/open-id-2649986" title="Open ID" target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/openid-091204100243-phpapp02-thumbnail.jpg" alt="Open ID">
+           <span class="presentation-meta">
+             <span class="title">Open ID</span>
+             <span class="author">by&nbsp;diwanshu.joshi</span>
+             <span class="view-count">1073&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/nathanflorea/open-id-and-django" title="Open ID and Django" target="_blank">
+           <img src="./Identity 2.0 - OpenID And User Centric Identity_files/openidanddjango-100910065647-phpapp02-thumbnail.jpg" alt="Open ID and Django">
+           <span class="presentation-meta">
+             <span class="title">Open ID and Django</span>
+             <span class="author">by&nbsp;nathanflorea</span>
+             <span class="view-count">2035&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+      </ul>
+    </div>
+
+  </div> <!-- end of div class pro-overlay -->
+    <div class="j-modal-share modal-share mobile-hide" style="display: none;" id="last-screen-modal-share" data-ga-track-category="" data-ga-track-action="">
+  <div class="j-modal-popup modal-popup">
+    <div class="j-modal-close modal-close"></div>
+    <div class="j-modal-content modal-content" id="modal-content" data-slideshowid="">
+      <header class="j-tabs tabs">
+        <a id="button-share-tab" class="selected j-button-share-tab">Share</a>
+        <a id="button-embed-tab" class="j-button-embed-tab">Embed</a>
+        <hr class="divider">
+      </header>
+      <div class="j-share-tab share-tab">
+        <section class="section share-social">
+          <div>
+            <ul class="j-share-social-list share-social-list">
+              <li class="linkedin">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="http://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation?ref=http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard" data-text="Identity 2.0 - OpenID And User Centric Identity by Martin Strandbygaard via slideshare">LinkedIn</a>
+                </div>
+              </li>
+              <li class="facebook">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="http://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation?ref=http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard">Facebook</a>
+                </div>
+              </li>
+              <li class="twitter">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="http://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation?ref=http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard" data-text="Identity 2.0 - OpenID And User Centric Identity #authentication #decentralized" data-related="" data-via="SlideShare">Twitter</a>
+                </div></li>
+              <li class="wordpress">
+                <div class="social-hover">
+                  <a rel="nofollow">Wordpress</a>
+                </div>
+              </li>
+              <li class="googleplus">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="http://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation?ref=http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard">Google</a>
+                </div>
+              </li>
+              <li class="pinterest">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="http://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation?ref=http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard" data-media="http://cdn.slidesharecdn.com/ss_thumbnails/identity-2-openid-and-user-centric-identity-1225652350421046-9-thumbnail-4.jpg?cb=1225645589" data-description="Identity 2.0 - OpenID And User Centric Identity by Martin Strandbygaard via slideshare" data-pin-do="buttonPin" data-pin-config="above">Pinterest</a>
+                </div>
+              </li>
+              <li class="reddit">
+                <div class="social-hover">
+                  <a rel="nofollow" data-url="http://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation?ref=http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard">Reddit</a>
+                </div>
+              </li>
+              <li class="scoopit">
+                <div class="social-hover">
+                  <a rel="nofollow" data-url="http://www.slideshare.net/strandbygaard/identity-20-openid-and-user-centric-identity-presentation?ref=http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard">ScoopIt</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="share-link-container">
+            <input type="input" class="j-share-link-url" id="share-link-url" data-ga="link" readonly="">
+          </div>
+        </section>
+        <hr class="divider">
+        <section class="section share-email">
+          <header>
+            <h3>Email this SlideShare</h3>
+            <span class="j-email-flash email-flash"></span>
+          </header>
+          <form id="share-email-form" class="j-share-email-form">
+            <input id="share-email-to" data-ga="to" class="j-share-email-to j-email-clear" name="recipients" type="email" placeholder="Recipient Email or Username" required="">
+            <input id="share-email-name" data-ga="name" class="j-share-email-name j-email-clear" name="name" type="text" placeholder="Your Name" required="">
+            <textarea id="share-email-msg" data-ga="msg" class="j-share-email-msg j-email-clear" name="msg" placeholder="I think you will find this useful."></textarea>
+            <div class="share-email-expand">
+              <div id="add-msg" class="j-add-msg" data-ga="add-msg">Add Message</div>
+              <input id="share-email-send" data-ga="send" class="j-share-email-send button" type="submit" value="Send">
+            </div>
+          </form>
+          <div id="email-sent" class="j-email-sent section"><div>
+            <span class="success-text">Email Sent!</span>
+            <button id="send-another-email" data-ga="another-email" class="j-send-another-email button btn">Send Another</button></div></div>
+        </section>
+      </div>
+      <div class="j-embed-tab embed-tab">
+        <section class="j-share-embed section share-embed">
+          <textarea id="share-embed-link" class="j-share-embed-link" readonly="" data-ga="link"></textarea>
+          <div class="share-embed-options">
+            <div class="embed-use-ssl" title="Check only if the site on which the embed code will be placed begins with &#39;https://&#39;">
+              <input type="checkbox" name="use-ssl" class="j-embed-use-ssl-cbox embed-use-ssl-cbox" data-ga="ssl">
+              <span>Generate embed code for https site</span>
+            </div>
+            <div class="embed-size">
+              <span class="title">Size (px):</span>
+              <select class="j-embed-size-picker embed-size-picker" id="embed-size-picker" data-ga="size-picker"></select>
+            </div>
+            <div class="embed-start">
+              <span class="title">Start on Slide:</span>
+              <input class="j-embed-start-picker embed-start-picker" id="embed-start-picker" pattern="\d+" data-ga="start-picker" value="1">
+            </div>
+            <div class="embed-show-related">
+              <input type="checkbox" name="related-content" checked="checked" class="j-embed-related-cbox embed-related-cbox" data-ga="related">
+              <span>Show related SlideShares at end</span>
+            </div>
+          </div>
+        </section>
+        <hr class="divider">
+        <section class="section share-wp">
+          <span>Shortcode for WordPress.com blogs</span>
+            [ <a href="http://help.slideshare.com/entries/20117147-can-i-embed-slideshare-presentations-in-wordpress-blogs-or-which-embed-code-should-i-use-for-my-word" target="_blank" rel="nofollow">?</a> ]
+          <input type="text" name="embed-code" id="share-embed-wp" value="" readonly="readonly" class="j-share-embed-wp text quiet h-wpembedcode" data-ga="wp-link">
+        </section>
+      </div>
+    </div>
+  </div>
+</div><!-- share modal -->
+
+</div><!-- last screen ends here -->
+
+        <div class="j-modal-share modal-share mobile-hide" style="display: none;" id="embed-modal-share" data-ga-track-category="embedPlayer" data-ga-track-action="">
+  <div class="j-modal-popup modal-popup">
+    <div class="j-modal-close modal-close"></div>
+    <div class="j-modal-content modal-content" id="modal-content" data-slideshowid="">
+      <header class="j-tabs tabs">
+        <a id="button-share-tab" class="selected j-button-share-tab">Share</a>
+        <a id="button-embed-tab" class="j-button-embed-tab">Embed</a>
+        <hr class="divider">
+      </header>
+      <div class="j-share-tab share-tab">
+        <section class="section share-social">
+          <div>
+            <ul class="j-share-social-list share-social-list">
+              <li class="linkedin">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="" data-text="">LinkedIn</a>
+                </div>
+              </li>
+              <li class="facebook">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="">Facebook</a>
+                </div>
+              </li>
+              <li class="twitter">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="" data-text="" data-related="" data-via="SlideShare">Twitter</a>
+                </div></li>
+              <li class="wordpress">
+                <div class="social-hover">
+                  <a rel="nofollow">Wordpress</a>
+                </div>
+              </li>
+              <li class="googleplus">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="">Google</a>
+                </div>
+              </li>
+              <li class="pinterest">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="" data-media="" data-description="" data-pin-do="buttonPin" data-pin-config="above">Pinterest</a>
+                </div>
+              </li>
+              <li class="reddit">
+                <div class="social-hover">
+                  <a rel="nofollow" data-url="">Reddit</a>
+                </div>
+              </li>
+              <li class="scoopit">
+                <div class="social-hover">
+                  <a rel="nofollow" data-url="">ScoopIt</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="share-link-container">
+            <input type="input" class="j-share-link-url" id="share-link-url" data-ga="link" readonly="">
+          </div>
+        </section>
+        <hr class="divider">
+        <section class="section share-email">
+          <header>
+            <h3>Email this SlideShare</h3>
+            <span class="j-email-flash email-flash"></span>
+          </header>
+          <form id="share-email-form" class="j-share-email-form">
+            <input id="share-email-to" data-ga="to" class="j-share-email-to j-email-clear" name="recipients" type="email" placeholder="Recipient Email or Username" required="">
+            <input id="share-email-name" data-ga="name" class="j-share-email-name j-email-clear" name="name" type="text" placeholder="Your Name" required="">
+            <textarea id="share-email-msg" data-ga="msg" class="j-share-email-msg j-email-clear" name="msg" placeholder="I think you will find this useful."></textarea>
+            <div class="share-email-expand">
+              <div id="add-msg" class="j-add-msg" data-ga="add-msg">Add Message</div>
+              <input id="share-email-send" data-ga="send" class="j-share-email-send button" type="submit" value="Send">
+            </div>
+          </form>
+          <div id="email-sent" class="j-email-sent section"><div>
+            <span class="success-text">Email Sent!</span>
+            <button id="send-another-email" data-ga="another-email" class="j-send-another-email button btn">Send Another</button></div></div>
+        </section>
+      </div>
+      <div class="j-embed-tab embed-tab">
+        <section class="j-share-embed section share-embed">
+          <textarea id="share-embed-link" class="j-share-embed-link" readonly="" data-ga="link"></textarea>
+          <div class="share-embed-options">
+            <div class="embed-use-ssl" title="Check only if the site on which the embed code will be placed begins with &#39;https://&#39;">
+              <input type="checkbox" name="use-ssl" class="j-embed-use-ssl-cbox embed-use-ssl-cbox" data-ga="ssl">
+              <span>Generate embed code for https site</span>
+            </div>
+            <div class="embed-size">
+              <span class="title">Size (px):</span>
+              <select class="j-embed-size-picker embed-size-picker" id="embed-size-picker" data-ga="size-picker"></select>
+            </div>
+            <div class="embed-start">
+              <span class="title">Start on Slide:</span>
+              <input class="j-embed-start-picker embed-start-picker" id="embed-start-picker" pattern="\d+" data-ga="start-picker" value="1">
+            </div>
+            <div class="embed-show-related">
+              <input type="checkbox" name="related-content" checked="checked" class="j-embed-related-cbox embed-related-cbox" data-ga="related">
+              <span>Show related SlideShares at end</span>
+            </div>
+          </div>
+        </section>
+        <hr class="divider">
+        <section class="section share-wp">
+          <span>Shortcode for WordPress.com blogs</span>
+            [ <a href="http://help.slideshare.com/entries/20117147-can-i-embed-slideshare-presentations-in-wordpress-blogs-or-which-embed-code-should-i-use-for-my-word" target="_blank" rel="nofollow">?</a> ]
+          <input type="text" name="embed-code" id="share-embed-wp" value="" readonly="readonly" class="j-share-embed-wp text quiet h-wpembedcode" data-ga="wp-link">
+        </section>
+      </div>
+    </div>
+  </div>
+</div><!-- share modal -->
+
+        </div>
+        <div class="image_maps"><map id="image_map_8_1392651040934" name="image_map_8_1392651040934"><area shape="rect" target="_blank" coords="181,436,782,477" href="mailto:martin.strandbygaard@safewhere.net" rel="nofollow"><area shape="rect" target="_blank" coords="257,282,706,286" href="mailto:martin@strandbygaard.com" rel="nofollow"><area shape="rect" target="_blank" coords="257,240,706,282" href="mailto:martin@strandbygaard.com" rel="nofollow"><area shape="rect" target="_blank" coords="265,377,696,382" href="mailto:martin@strandbygaard.net" rel="nofollow"><area shape="rect" target="_blank" coords="265,336,696,377" href="mailto:martin@strandbygaard.net" rel="nofollow"><area shape="rect" target="_blank" coords="181,477,782,482" href="mailto:martin.strandbygaard@safewhere.net" rel="nofollow"></map><map id="image_map_27_1392651047234" name="image_map_27_1392651047234"><area shape="rect" target="_blank" coords="86,454,877,501" href="http://martin.strandbygaard.net/" rel="nofollow"><area shape="rect" target="_blank" coords="106,271,857,276" href="http://martin.strandbygaard.net/" rel="nofollow"><area shape="rect" target="_blank" coords="106,225,857,271" href="http://martin.strandbygaard.net/" rel="nofollow"><area shape="rect" target="_blank" coords="56,382,907,386" href="http://martin.strandbygaard.net/" rel="nofollow"><area shape="rect" target="_blank" coords="56,335,907,382" href="http://martin.strandbygaard.net/" rel="nofollow"><area shape="rect" target="_blank" coords="86,501,877,507" href="http://martin.strandbygaard.net/" rel="nofollow"></map></div>
+      <div class="action-btns-container">
+    <a rel="nofollow" title="Like this presentation" href="http://www.slideshare.net/signup?from_source=http%3A%2F%2Fwww.slideshare.net%2Fslideshow%2Fembed_code%2F714582%3FhostedIn%3Dslideshare%26referer%3Dhttp%25253A%25252F%25252Fwww.slideshare.net%25252Fstrandbygaard" target="_blank" class="action-btn favorite j-favorite ss-action" data-ssid="714582" data-target="#login_modal">
+      <span class="action-btn-icon"></span>
+      <span class="action-btn-text">Like</span>
+    </a>
+
+  <a rel="nofollow" href="http://www.slideshare.net/slideshow/embed_code/714582?hostedIn=slideshare&referer=http%253A%252F%252Fwww.slideshare.net%252Fstrandbygaard#" title="Share this presentation" class="action-btn share j-share" data-ssid="714582">
+    <span class="action-btn-icon"></span>
+    <span class="action-btn-text">Share</span>
+  </a>
+
+    <a rel="nofollow" href="http://www.slideshare.net/signup?from_source=http%3A%2F%2Fwww.slideshare.net%2Fslideshow%2Fembed_code%2F714582%3FhostedIn%3Dslideshare%26referer%3Dhttp%25253A%25252F%25252Fwww.slideshare.net%25252Fstrandbygaard" target="_blank" title="Save this presentation" class="action-btn save j-save ss-action" data-target="#login_modal">
+      <span class="save action-btn-icon"></span>
+      <span class="action-btn-text">Save</span>
+    </a>
+</div></div><!-- end player -->
+    <script>
+      $.ajax({
+        url : 'http://www.slideshare.net/pingback/embed_or_homepageplayerhits/714582',
+        type : 'GET',
+        data : {
+          ref : 'http%3A%2F%2Fwww.slideshare.net%2Fstrandbygaard'
+        },
+        cache : false
+      });
+    </script>
+  
+
+<script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>
